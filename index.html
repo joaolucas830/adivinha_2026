@@ -90,12 +90,17 @@
 
         if(ChuteDoJogador === numerosecreto){
             dvMensagem.textContent = 'Parabéns! Você acertou o número secreto'+numerosecreto;
+            desabilitarJogo();
         }else{
             dvMensagem.textContent = 'Errou!';
         }   
 
         }
-        
+        function desabilitarJogo (){
+            document.getElementById('BTNAdivinhar').disabled = true;
+            document.getElementById('TXTPalpite').disabled = true;
+        }
+    
     
     </script>    
 
