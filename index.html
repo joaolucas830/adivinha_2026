@@ -70,6 +70,7 @@
     
     <script>
         let numerosecreto = Math.floor(Math.random() * 100);
+        let qtdentativas = 10;
 
         function verificarPalpite(){
         //-----------------------------------
@@ -88,6 +89,9 @@
 
             }
 
+            console.log(qtdentativas);
+            qtdentativas--;
+            
         if(ChuteDoJogador === numerosecreto){
             dvMensagem.textContent = 'Parabéns! Você acertou o número secreto'+numerosecreto;
             desabilitarJogo();
